@@ -1,13 +1,7 @@
 <div class="container">
   <h1>My Portfolio</h1>
   <nav>
-    <ul>
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/about">About</a></li>
-      <li><a routerLink="/projects">Projects</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
-      <li><a routerLink="/tictactoe">tictactoe</a></li>
-    </ul>
+
   </nav>
 </div>
 <div class="navbar-fixed">
@@ -16,7 +10,7 @@
       <a routerLink="/" class="brand-logo left">
         <!-- <img src="assets/dgm_icon_white.png" /> -->
       </a>
-      <ul class="right">
+      <ul class="right flex-container">
         <li *ngFor="let link of links" [ngClass]="currentRoute === link.url ? 'active' : ' '">
           <a class="light-blue-text text-lighten-5 hide-on-med-and-down" routerLink="{{ link.url }}">{{ link.title }}</a>
           <a class="light-blue-text text-lighten-5 hide-on-large-only" routerLink="{{ link.url }}">

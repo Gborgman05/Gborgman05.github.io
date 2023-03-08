@@ -10,9 +10,11 @@ import { NavigationLink } from 'src/app/navigation-link.model';
 })
 export class NavBarComponent {
   @Input() links: NavigationLink[] = [
-    { title: '/About', url: '/about', icon: 'contacts' },
-    { title: '/Projects', url: '/projects', icon: 'folder' },
-    { title: '/Contact', url: '/contact', icon: 'share' }
+    { title: '/about', url: '/about', icon: 'contacts' },
+    { title: '/projects', url: '/projects', icon: 'folder' },
+    { title: '/contact', url: '/contact', icon: 'share' },
+    { title: '/tictactoe', url: '/tictactoe', icon: 'share' },
+    { title: '/', url: '/', icon: 'share' },
   ];
   currentRoute: string = "/";
     constructor(location: Location, router: Router) {
