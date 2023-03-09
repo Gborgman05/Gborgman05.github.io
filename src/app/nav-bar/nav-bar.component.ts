@@ -10,7 +10,7 @@ import { NavigationLink } from 'src/app/navigation-link.model';
 })
 export class NavBarComponent {
   @Input() links: NavigationLink[] = [
-    { title: '/', url: '/', icon: 'share' },
+    { title: '/', url: '/', },
     { title: '/about', url: '/about',},
     { title: '/projects', url: '/projects',},
     { title: '/contact', url: '/contact', },

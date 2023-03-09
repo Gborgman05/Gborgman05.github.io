@@ -1,13 +1,9 @@
-<p>projects works!</p>
-
-
 <h1>Projects</h1>
+<div *ngFor="let project of projects"> 
+    <h2> <a [href] = "project.link" >{{ project.title }} </a> </h2>
+    {{ project.desc }}
+</div>
 
-<h2>Outlier Detection</h2>
 
-<h2>Algorithms and Interview Preparation</h2>
-
-<h2>Published Research</h2>
-
-<h2>Computer Vision: Object Detection</h2>
-Partnered with Amazon DxHub and the World Bank to improve accuracy in identification of informal businesses. 
+<!-- <h2> <a href="https://github.com/Gborgman05/informal_business">Computer Vision: Object Detection</a> </h2> -->
+<!-- Partnered with Amazon DxHub and the World Bank to improve accuracy in identification of informal businesses.  -->
