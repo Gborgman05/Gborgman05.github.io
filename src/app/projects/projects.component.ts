@@ -9,9 +9,9 @@ import { HttpClient } from '@angular/common/http';
 export class ProjectsComponent {
   @Input() projects = [
     {
-      title: "Outlier Detection for College Value",
-      desc: "Outlier detection for universities based on tuition and other factors, to determine the best deal on education.",
-      link: "https://github.com/Gborgman05/DATA-301-Final-Project"
+      title: "",
+      desc: "",
+      link: ""
     }
   ];
     constructor (private http: HttpClient) {
