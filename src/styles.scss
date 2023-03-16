@@ -31,3 +31,6 @@ body::-webkit-scrollbar {
 .indicator {
   border-bottom: 5px solid var(--color-primary);
 }
+.flex-container {
+  display: flex;
+}
