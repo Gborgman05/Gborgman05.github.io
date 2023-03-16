@@ -11,7 +11,8 @@ export class ProjectsComponent {
     {
       title: "",
       desc: "",
-      link: ""
+      link: "",
+      language: ""
     }
   ];
     constructor (private http: HttpClient) {
@@ -28,7 +29,8 @@ export class ProjectsComponent {
           this.projects.push({
             title: repo.name,
             desc: repo.description,
-            link: repo.html_url
+            link: repo.html_url,
+            language: repo.language
           })
         });
       });

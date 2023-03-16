@@ -1,9 +1,42 @@
-<h1>Projects</h1>
+<div class="container">
+  <div class="row">
+    <h1 class="light-blue-text text-darken-3 animate__animated animate__bounceInLeft">
+      <b>Projects</b>
+    </h1>
+  </div>
+<div *ngIf="projects.length > 0" id="starred-projects" class="row">
+<a
+    *ngFor="let project of projects; let i = index"
+    class="card animate__animated animate__zoomIn animate__faster col s10 offset-s1 m5 l5"
+    [ngClass]="{ 'offset-l2': i % 2 !== 0, 'offset-m2': i % 2 !== 0 }"
+    [href]="project.link" 
+    target="_blank"
+>
+    <div class="card-content light-blue-text text-lighten-5 light-blue darken-3">
+    <span class="card-title">
+        <div class="card-title-content">
+        <span *ngIf="project.language" class="badge light-blue lighten-5 light-blue-text text-darken-3">
+            {{ project.language }}
+        </span>
+        <h5 class="project-title text-ellipsis">{{ project.title}}</h5>
+        </div>
+    </span>
+    <p class="project-description flow-text">{{ project.desc}}.</p>
+    </div>
+</a>
+</div>
+<!-- <h1>Projects</h1>
 <div *ngFor="let project of projects"> 
     <h2> <a [href] = "project.link" >{{ project.title }} </a> </h2>
     {{ project.desc }}
-</div>
+</div> -->
 
 
 <!-- <h2> <a href="https://github.com/Gborgman05/informal_business">Computer Vision: Object Detection</a> </h2> -->
 <!-- Partnered with Amazon DxHub and the World Bank to improve accuracy in identification of informal businesses.  -->
+  <ng-template #elseBlock>
+    <div class="card-panel animate__animated animate__zoomIn animate__faster">
+      <p class="not-found-title">Projects not found</p>
+    </div>
+  </ng-template>
+</div>
