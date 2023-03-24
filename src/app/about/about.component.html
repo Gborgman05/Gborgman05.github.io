@@ -1,8 +1,36 @@
-<h1> Galen Borgman</h1>
-
-<ul> 
-    <li>Software Developer</li>
-    <li>Reader</li>
-    <li>Board GAMER</li>
-    <li>Learner</li>
-</ul>
+<section class="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-content">
+      <img class="profile-picture" src="{{profilePicture}}" alt="{{name}}">
+      <p>{{description}}</p>
+    </div>
+    <div class="interests">
+      <h3 class="interests-title">Interests & Favorites</h3>
+      <div class="interest">
+        <h4 class="interest-type">Books</h4>
+        <ul class="book-list">
+          <li class="book" *ngFor="let book of favoriteBooks">{{book}}</li>
+        </ul>
+      </div>
+      <div class="interest">
+        <h4 class="interest-type">Hobbies</h4>
+        <ul class="hobby-list">
+          <li class="hobby" *ngFor="let hobby of hobbies">{{hobby}}</li>
+        </ul>
+      </div>
+      <div class="interest">
+        <h4 class="interest-type">Movies</h4>
+        <ul class="movie-list">
+          <li class="movie" *ngFor="let movie of favoriteMovies">{{movie}}</li>
+        </ul>
+      </div>
+      <div class="interest">
+        <h4 class="interest-type">Music</h4>
+        <ul class="music-list">
+          <li class="music" *ngFor="let music of favoriteMusic">{{music}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

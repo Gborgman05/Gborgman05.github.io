@@ -1,0 +1,27 @@
+.contact {
+  padding: 2rem 0;
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.2rem;
+
+      .contact-icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

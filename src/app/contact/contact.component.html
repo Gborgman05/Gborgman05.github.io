@@ -1,10 +1,12 @@
-<h1> Contact me!</h1>
-I'd love to chat and get to know you!
-
-<ul>
-    <li>linkedin</li>
-    <li>github</li>
-</ul>
-I don't really have any other relevant social media. These are the main ones I keep somewhat updated. 
-
-I'm more likely to respond to a message if it has a book recommendation in it. I'm always looking for those. 
+<section class="contact">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>If you're interested in working with me or just want to say hello, feel free to reach out:</p>
+    <div class="contact-details">
+      <div class="contact-detail" *ngFor="let detail of contactDetails">
+        <img class="contact-icon" src="{{detail.icon}}" alt="{{detail.type}}">
+        <a class="contact-link" href="{{detail.link}}" target="_blank">{{detail.label}}</a>
+      </div>
+    </div>
+  </div>
+</section>
