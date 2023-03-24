@@ -11,7 +11,10 @@ import { SquareComponent } from './square/square.component';
 import { BoardComponent } from './board/board.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope, faPhone,} from '@fortawesome/free-solid-svg-icons';
+import { fab, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -27,9 +30,15 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+    constructor() {
+    library.add(faEnvelope, faPhone, fab, faLinkedin, faGithub);
+  }
+ }
+
