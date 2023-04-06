@@ -15,6 +15,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faPhone,} from '@fortawesome/free-solid-svg-icons';
 import { fab, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,15 @@ import { fab, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
     ContactComponent,
     SquareComponent,
     BoardComponent,
-    NavBarComponent
+    NavBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
