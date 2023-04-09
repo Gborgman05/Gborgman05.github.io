@@ -33,4 +33,7 @@ export class AboutComponent {
     'Takenobu',
     'Hozier'
   ];
+  favoriteGames = [
+    'Civilization 6'
+  ]
 }
