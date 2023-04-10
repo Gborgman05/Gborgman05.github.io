@@ -5,10 +5,10 @@
       <img class="profile-picture" src="{{profilePicture}}" alt="{{name}}">
       <p>{{description}}</p>
     </div>
-    <div class="interests">
+    <div class="interests" >
       <h3 class="interests-title">Interests & Favorites</h3>
-      <div class="interest">
-        <h4 class="interest-type">Books</h4>
+      <div class="interest"*ngFor="let favorite of favorites">
+        <h4 class="interest-type"></h4>
         <ul class="book-list">
           <li class="book" *ngFor="let book of favoriteBooks">{{book}}</li>
         </ul>
@@ -22,15 +22,21 @@
       <div class="interest">
         <h4 class="interest-type">Movies</h4>
         <ul class="movie-list">
-          <li class="movie" *ngFor="let movie of favoriteMovies">{{movie}}</li>
+          <a><li class="movie" *ngFor="let movie of favoriteMovies">{{movie}}</li></a>
         </ul>
       </div>
       <div class="interest">
         <h4 class="interest-type">Music</h4>
         <ul class="music-list">
-          <li class="music" *ngFor="let music of favoriteMusic">{{music}}</li>
+          <li class="music" *ngFor="let music of favoriteMusic"><a [href]=[music.link]>{{music.name}}</a></li>
         </ul>
       </div>
+       <div class="interest">
+        <h4 class="interest-type">Video Games</h4>
+        <ul class="video-game-list">
+          <li class="video-game" *ngFor="let game of favoriteGames">{{game}}</li>
+        </ul>
+      </div>   
     </div>
   </div>
 </section>
