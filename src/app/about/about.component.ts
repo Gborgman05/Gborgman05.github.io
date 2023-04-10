@@ -34,6 +34,8 @@ export class AboutComponent {
     'Hozier'
   ];
   favoriteGames = [
-    'Civilization 6'
+    "Sid Meier's Civilization",
+    "Phasmophobia",
+    "Stardew valley"
   ]
 }
