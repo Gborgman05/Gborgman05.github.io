@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Favorite } from './favorite.model';
 
 @Component({
@@ -43,4 +43,30 @@ export class AboutComponent {
   { category: 'Game', name: 'Phasmophobia', link: '' },
   { category: 'Game', name: 'Stardew Valley', link: '' },
 ];
+  categoryLists= this.favorites.reduce((accumulator: any, item: Favorite) => {
+    if (!accumulator[item.category]) {
+      accumulator[item.category] = [];
+    }
+
+    accumulator[item.category].push(item);
+
+    return accumulator;
+  }, {});
+
+  getCategoryKeys(): string[] {
+    return Object.keys(this.categoryLists);
+  }
+constructor() {
+  this.categoryLists = this.favorites.reduce((accumulator: any, item) => {
+  // If the category is not in the accumulator, create a new list
+  if (accumulator[item.category]==undefined) {
+    accumulator[item.category] = [];
+  }
+
+  // Add the item to the category list
+  accumulator[item.category].push(item);
+
+  return accumulator;
+}, {});
+}
 }

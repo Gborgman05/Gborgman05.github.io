@@ -5,38 +5,31 @@
       <img class="profile-picture" src="{{profilePicture}}" alt="{{name}}">
       <p>{{description}}</p>
     </div>
+    <!-- <div *ngFor="let categoryKey of getCategoryKeys()">
+  <h3>Category: {{ categoryKey }}</h3>
+  <ul>
+    <li *ngFor="let item of categoryLists[categoryKey]">
+      {{ item.id }} - {{ item.name }}
+    </li>
+  </ul>
+</div> -->
     <div class="interests" >
       <h3 class="interests-title">Interests & Favorites</h3>
-      <div class="interest"*ngFor="let favorite of favorites">
-        <h4 class="interest-type"></h4>
+        <div *ngFor="let categoryKey of getCategoryKeys()">
+  <h3>{{ categoryKey }}</h3>
+  <ul>
+    <li *ngFor="let item of categoryLists[categoryKey]">
+      <a [href]="item.link">{{ item.name }}</a>
+    </li>
+  </ul>
+</div>
+
+        <!-- <h4 class="interest-type">{{categorylist}}</h4>
         <ul class="book-list">
-          <li class="book" *ngFor="let book of favoriteBooks">{{book}}</li>
+          <li class="book" *ngFor="let fave of categoryLists[categorylist]"><a [href]=[fave.link]>{{fave.name}}</a> </li>
         </ul>
       </div>
-      <div class="interest">
-        <h4 class="interest-type">Hobbies</h4>
-        <ul class="hobby-list">
-          <li class="hobby" *ngFor="let hobby of hobbies">{{hobby}}</li>
-        </ul>
-      </div>
-      <div class="interest">
-        <h4 class="interest-type">Movies</h4>
-        <ul class="movie-list">
-          <a><li class="movie" *ngFor="let movie of favoriteMovies">{{movie}}</li></a>
-        </ul>
-      </div>
-      <div class="interest">
-        <h4 class="interest-type">Music</h4>
-        <ul class="music-list">
-          <li class="music" *ngFor="let music of favoriteMusic"><a [href]=[music.link]>{{music.name}}</a></li>
-        </ul>
-      </div>
-       <div class="interest">
-        <h4 class="interest-type">Video Games</h4>
-        <ul class="video-game-list">
-          <li class="video-game" *ngFor="let game of favoriteGames">{{game}}</li>
-        </ul>
-      </div>   
+       -->
+       </div>
     </div>
-  </div>
 </section>
