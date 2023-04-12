@@ -19,7 +19,7 @@
   <h3>{{ categoryKey }}</h3>
   <ul>
     <li *ngFor="let item of categoryLists[categoryKey]">
-      <a [href]="item.link">{{ item.name }}</a>
+      <a [href]="item.link" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
     </li>
   </ul>
 </div>
