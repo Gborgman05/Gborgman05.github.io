@@ -17,6 +17,9 @@ import { faEnvelope, faPhone,} from '@fortawesome/free-solid-svg-icons';
 import { fab, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
+import { HikesComponent } from './hikes/hikes.component';
+import { HorrorComponent } from './horror/horror.component';
+import { BoardGamesComponent } from './board-games/board-games.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { FooterComponent } from './footer/footer.component';
     SquareComponent,
     BoardComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    HikesComponent,
+    HorrorComponent,
+    BoardGamesComponent
   ],
   imports: [
     BrowserModule,
