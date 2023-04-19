@@ -15,9 +15,9 @@ export class AboutComponent {
   { category: 'Book', name: 'The Way of Kings', link: 'https://www.brandonsanderson.com/the-stormlight-archive-series/' },
   { category: 'Book', name: 'Dune', link: 'https://www.goodreads.com/book/show/44767458-dune' },
 
-  { category: 'Hobby', name: 'Board Games', link: '' },
-  { category: 'Hobby', name: 'Hiking', link: '' },
-  { category: 'Hobby', name: 'Horror Movies', link: '' },
+  { category: 'Hobby', name: 'Board Games', link: '/games' },
+  { category: 'Hobby', name: 'Hiking', link: '/hiking' },
+  { category: 'Hobby', name: 'Horror Movies', link: '/horror' },
 
   { category: 'Movie', name: 'Hereditary', link: 'https://www.imdb.com/title/tt7784604/' },
   { category: 'Movie', name: 'Inception', link: 'https://www.imdb.com/title/tt1375666/' },

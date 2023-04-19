@@ -1,5 +1,6 @@
 export interface Favorite {
   category: string,
   name: string,
-  link: string
+  link: string,
+  description?: string
 }
