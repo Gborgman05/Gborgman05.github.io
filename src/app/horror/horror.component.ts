@@ -10,7 +10,7 @@ export class HorrorComponent {
   favoriteHorror:Favorite[] = []
   constructor() {
     this.favoriteHorror = [
- { category: 'Book', name: 'Mistborn', link: 'https://www.brandonsanderson.com/the-mistborn-saga-the-original-trilogy/' },
+ { category: 'Movie ', name: 'Hereditary', link: 'https://www.brandonsanderson.com/the-mistborn-saga-the-original-trilogy/' },
   { category: 'Book', name: 'The Way of Kings', link: 'https://www.brandonsanderson.com/the-stormlight-archive-series/' },
   { category: 'Book', name: 'Dune', link: 'https://www.goodreads.com/book/show/44767458-dune' },
     ]
