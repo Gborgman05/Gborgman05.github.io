@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { Favorite } from '../about/favorite.model';
 
 @Component({
@@ -7,15 +7,12 @@ import { Favorite } from '../about/favorite.model';
   styleUrls: ['./horror.component.scss']
 })
 export class HorrorComponent {
-  favoriteHorror:Favorite[] = []
-  constructor() {
-    this.favoriteHorror = [
- { category: 'Movie ', name: 'Hereditary', link: 'https://www.brandonsanderson.com/the-mistborn-saga-the-original-trilogy/' },
-  { category: 'Book', name: 'The Way of Kings', link: 'https://www.brandonsanderson.com/the-stormlight-archive-series/' },
-  { category: 'Book', name: 'Dune', link: 'https://www.goodreads.com/book/show/44767458-dune' },
-    ]
+  favoriteHorror:Favorite[] = [
+  { category: 'Movie', name: 'Hereditary', link: 'https://www.imdb.com/title/tt7784604/' },
+  { category: 'Podcast', name: 'The Magnus Archive', link: 'https://rustyquill.com/show/the-magnus-archives/' },
+  { category: 'TV Series', name: 'The Haunting of Hill House', link: 'https://en.wikipedia.org/wiki/The_Haunting_of_Hill_House_(TV_series)' },
+]
 
-  }
 
 
 }
