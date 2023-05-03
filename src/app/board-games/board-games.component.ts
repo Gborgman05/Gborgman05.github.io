@@ -12,4 +12,5 @@ export class BoardGamesComponent {
   { category: 'Board Game', name: 'Arkham Horror: The Card Game', link: 'https://boardgamegeek.com/boardgame/205637/arkham-horror-card-game' },
   { category: 'Board Game', name: 'Gloomhaven', link: 'https://boardgamegeek.com/boardgame/174430/gloomhaven' },
 ]
+
 }
