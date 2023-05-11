@@ -5,14 +5,7 @@
       <img class="profile-picture" src="{{profilePicture}}" alt="{{name}}">
       <p>{{description}}</p>
     </div>
-    <!-- <div *ngFor="let categoryKey of getCategoryKeys()">
-  <h3>Category: {{ categoryKey }}</h3>
-  <ul>
-    <li *ngFor="let item of categoryLists[categoryKey]">
-      {{ item.id }} - {{ item.name }}
-    </li>
-  </ul>
-</div> -->
+
     <div class="interests" >
       <h3 class="interests-title">Interests & Favorites</h3>
         <div *ngFor="let categoryKey of getCategoryKeys()">
@@ -24,12 +17,7 @@
   </ul>
 </div>
 
-        <!-- <h4 class="interest-type">{{categorylist}}</h4>
-        <ul class="book-list">
-          <li class="book" *ngFor="let fave of categoryLists[categorylist]"><a [href]=[fave.link]>{{fave.name}}</a> </li>
-        </ul>
-      </div>
-       -->
+ 
        </div>
     </div>
 </section>
