@@ -12,15 +12,15 @@ export class ContactComponent {
     {
       type: 'Email',
       icon: faEnvelope,
-      label: 'your.email@example.com',
-      link: 'mailto:your.email@example.com'
+      label: 'galenborgman@gmail.com',
+      link: 'mailto:galenborgman@gmail.com'
     },
-    {
-      type: 'Phone',
-      icon: faPhone,
-      label: '+1 (123) 456-7890',
-      link: 'tel:+11234567890'
-    },
+    // {
+    //   type: 'Phone',
+    //   icon: faPhone,
+    //   label: '+1 (123) 456-7890',
+    //   link: 'tel:+11234567890'
+    // },
     {
       type: 'LinkedIn',
       icon: faLinkedin,
