@@ -10,7 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SquareComponent } from './square/square.component';
 import { BoardComponent } from './board/board.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faPhone,} from '@fortawesome/free-solid-svg-icons';
@@ -20,6 +20,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HikesComponent } from './hikes/hikes.component';
 import { HorrorComponent } from './horror/horror.component';
 import { BoardGamesComponent } from './board-games/board-games.component';
+import { BlogPostComponent } from './blog-post/blog-post.component';
+import { MarkdownModule } from 'ngx-markdown';
+
 
 @NgModule({
   declarations: [
@@ -34,14 +37,18 @@ import { BoardGamesComponent } from './board-games/board-games.component';
     FooterComponent,
     HikesComponent,
     HorrorComponent,
-    BoardGamesComponent
+    BoardGamesComponent,
+    BlogPostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MarkdownModule.forRoot({
+      loader: HttpClient
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

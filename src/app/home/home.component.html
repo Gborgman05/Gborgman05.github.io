@@ -2,7 +2,18 @@
 {{ desc }}
 
 <div id="posts">
-    <div ngFor="post in posts">
+        <div *ngFor="let post of posts">
+            {{post}}
+            <app-blog-post [filename]="post"></app-blog-post>
+        </div>
+    <!-- <div *ngFor="let post of posts"> -->
+        <!-- {{ post }} -->
+<!--  -->
+        <!-- <markdown -->
+            <!-- [src]= "post" -->
+            <!-- [srcRelativeLink]="true"> -->
+        <!-- </markdown> -->
+        <!-- </div> -->
 
-    </div>
+
 </div>
