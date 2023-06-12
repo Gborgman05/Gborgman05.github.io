@@ -12,11 +12,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent {
   @Input() desc = "I'm a learner focused on Software Engineering right now. \nI'm always reading something, you can see those here.\nFor some of my projects see here.\nIf you'd like to reach out go here.\n\nIf you want to play tictactoe (with yourself) go here. "
-  @Input() posts = ["./src/blog-posts/2020-12-10-First_steps.markdown",
-  "2020-12-10-First_steps.markdown",
-    "2020-12-10-welcome-to-jekyll.markdown",
-    "2020-12-12-statistics-for-data-science.markdown",
-    "2020-12-17-My-Favorites.markdown",
+  @Input() posts = [ "2020-12-10-First_steps.md",
+    "2020-12-10-welcome-to-jekyll.md",
+    "2020-12-12-statistics-for-data-science.md",
+    "2020-12-17-My-Favorites.md",
     "2020-12-25-Obligatory-Christmas-Episode.md",
     "2020-12-28-search-and-replace.md",
     "2020-12-28-Thank-You-Notes.md",

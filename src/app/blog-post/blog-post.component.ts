@@ -12,10 +12,12 @@ import { HttpClient } from '@angular/common/http';
 export class BlogPostComponent implements OnInit {
   markdownContent: string = "";
   @Input() filename: string = "";
+  @Input() fullPath: string = "";
 
   constructor(private markdownService: MarkdownService, private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.fullPath = 'assets/blog-posts/' + this.filename
     this.http.get('assets/blog-posts/' + this.filename, { responseType: 'text' })
       .subscribe((markdown: string) => {
         this.markdownContent = markdown;
