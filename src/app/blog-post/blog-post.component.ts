@@ -16,7 +16,7 @@ export class BlogPostComponent implements OnInit {
   constructor(private markdownService: MarkdownService, private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get('src/blog-posts/' + this.filename, { responseType: 'text' })
+    this.http.get('assets/blog-posts/' + this.filename, { responseType: 'text' })
       .subscribe((markdown: string) => {
         this.markdownContent = markdown;
       });
