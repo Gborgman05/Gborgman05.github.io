@@ -3,7 +3,7 @@ layout: post
 title:  "First Post"
 date:   2020-12-10 20:23:12 -0800
 categories: thoughts 
----
+--- 
 This is my first actual written post
 # Personal Websites
 I think personal websites are fairly interesting: I'd like mine to be particularly interesting. 

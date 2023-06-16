@@ -1,0 +1,36 @@
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+}
+
+.blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6 {
+  margin: 20px 0 10px;
+}
+
+.blog-post p {
+  margin: 0 0 10px;
+}
+
+.blog-post code {
+  font-family: monospace;
+  background-color: #f9f9f9;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.blog-post pre {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.blog-post img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 2.5em;
+}

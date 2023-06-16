@@ -1,2 +1,17 @@
-<!-- <div [innerHTML]="markdownContent" ngxMarkdown></div> -->
-<markdown [src]="fullPath"></markdown>
+<div class="blog-post">
+  <h1>{{ title }}</h1>
+  <p>By <span>{{ author }}</span> on <span>{{ date }}</span></p>
+  <p>Estimated reading time: <span>{{ readingTime }}</span></p>
+  <!-- <p>Categories: <span>{{ categories }}</span></p> -->
+
+  <markdown [src]="fullPath"></markdown>
+
+  <div class="navigation">
+    <!-- <button (click)="goToPreviousPost()">Previous Post</button> -->
+    <!-- <button (click)="goToNextPost()">Next Post</button> -->
+  </div>
+
+  <!-- Comments section here -->
+</div><div class="blog-post">
+  <markdown [src]="fullPath"></markdown>
+</div>
