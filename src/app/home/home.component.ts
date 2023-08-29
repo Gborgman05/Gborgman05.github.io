@@ -24,7 +24,8 @@ export class HomeComponent {
     "2021-7-13-Hera-Revisited.md",
     "2022-7-8-Waking-Up.markdown",
     "2023-1-22-Spirit-Island.md",
-    "2023-1-29-Sunday.md",]
+    "2023-1-29-Sunday.md",
+    "2023-8-29-Timeline.md"]
   constructor() {
   }
 
