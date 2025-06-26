@@ -3,10 +3,10 @@
     <h2 class="section-title">Get in Touch</h2>
     <p>If you're interested in working with me or just want to say hello, feel free to reach out:</p>
     <div class="contact-details">
-      <div class="contact-detail" *ngFor="let detail of contactDetails">
+      <a class="contact-detail" *ngFor="let detail of contactDetails" href="{{detail.link}}" target="_blank">
         <fa-icon [icon]="detail.icon" class="contact-icon"></fa-icon> 
-        <a class="contact-link" href="{{detail.link}}" target="_blank">{{detail.label}}</a>
-      </div>
+        <span class="contact-link">{{detail.label}}</span>
+      </a>
     </div>
   </div>
 </section>

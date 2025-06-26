@@ -1,8 +1,8 @@
 .about {
   padding: 2rem 0;
-  background: #f8fafc;
+  background: #16213e;
   border-radius: 1rem;
-  box-shadow: 0 2px 12px rgba(60,60,60,0.06);
+  box-shadow: 0 2px 12px rgba(233,69,96,0.1);
   max-width: 900px;
   margin: 2rem auto;
 }
@@ -10,7 +10,7 @@
 .section-title {
   font-size: 2.2rem;
   margin-bottom: 1.5rem;
-  color: #3f51b5;
+  color: #e94560;
   font-weight: 700;
   letter-spacing: 0.01em;
 }
@@ -18,9 +18,9 @@
 .about-content {
   display: flex;
   align-items: center;
-  background: #fff;
+  background: #1a1a2e;
   border-radius: 1rem;
-  box-shadow: 0 1px 6px rgba(63,81,181,0.07);
+  box-shadow: 0 1px 6px rgba(233,69,96,0.1);
   padding: 2rem;
   margin-bottom: 2rem;
   gap: 2rem;
@@ -28,6 +28,7 @@
 }
 h2 {
   padding-left: 1rem;
+  color: #e8e8e8;
 }
 
 .profile-picture {
@@ -35,36 +36,36 @@ h2 {
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #3f51b5;
-  box-shadow: 0 2px 8px rgba(63,81,181,0.08);
+  border: 4px solid #e94560;
+  box-shadow: 0 2px 8px rgba(233,69,96,0.2);
 }
 
 .about-content p {
   font-size: 1.15rem;
-  color: #333;
+  color: #e8e8e8;
   margin: 0;
   line-height: 1.7;
 }
 
 .interests {
   margin-top: 2rem;
-  background: #fff;
+  background: #1a1a2e;
   border-radius: 0.75rem;
-  box-shadow: 0 1px 6px rgba(63,81,181,0.05);
+  box-shadow: 0 1px 6px rgba(233,69,96,0.1);
   padding: 1.5rem 2rem;
 }
 
 .interests-title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #3f51b5;
+  color: #e94560;
   font-weight: 600;
 }
 
 .interests h3 {
   margin-top: 1.2rem;
   margin-bottom: 0.5rem;
-  color: #222;
+  color: #e8e8e8;
   font-size: 1.15rem;
   font-weight: 600;
 }
@@ -79,15 +80,15 @@ h2 {
 }
 
 .interests a {
-  color: #3f51b5;
+  color: #e94560;
   text-decoration: none;
-  border-bottom: 1px dashed #3f51b5;
+  border-bottom: 1px dashed #e94560;
   transition: color 0.2s, border-bottom 0.2s;
 }
 
 .interests a:hover {
-  color: #283593;
-  border-bottom: 1px solid #283593;
+  color: #ff6b7a;
+  border-bottom: 1px solid #ff6b7a;
 }
 
 @media (max-width: 700px) {

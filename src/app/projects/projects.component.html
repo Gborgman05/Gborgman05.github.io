@@ -1,55 +1,51 @@
 <div class="container">
   <div class="row">
-    <h1 class="light-blue-text text-darken-3 animate__animated animate__bounceInLeft">
+    <h1>
       <b>Projects</b>
     </h1>
   </div>
-  <div *ngIf="projects.length > 0" id="starred-projects" class="column">
-    <div class="col-12 col-md-6">
-      <ng-container *ngFor="let project of projectsColumn1; let i = index">
-        <a
-          class="card animate__animated animate__zoomIn animate__faster"
-          [href]="project.link"
-          target="_blank"
-        >
-      <div class="card-content light-blue-text text-lighten-5 light-blue darken-3">
-    <span class="card-title">
-        <div class="card-title-content">
-        <span *ngIf="project.language" class="badge light-blue lighten-5 light-blue-text text-darken-3">
-            {{ project.language }}
-        </span>
-        <h5 class="project-title text-ellipsis">{{ project.title}}</h5>
+  <div *ngIf="projects.length > 0" id="starred-projects">
+    <ng-container *ngFor="let project of projectsColumn1; let i = index">
+      <a
+        class="card"
+        [href]="project.link"
+        target="_blank"
+      >
+        <div class="card-content">
+          <span class="card-title">
+            <div class="card-title-content">
+              <span *ngIf="project.language" class="badge">
+                {{ project.language }}
+              </span>
+              <h5 class="project-title">{{ project.title}}</h5>
+            </div>
+          </span>
+          <p class="project-description">{{ project.desc}}.</p>
         </div>
-    </span>
-    <p class="project-description flow-text">{{ project.desc}}.</p>
-    </div>        <!-- Card content goes here -->
-        </a>
-      </ng-container>
-    </div>
-    <div class="column col-12 col-md-6">
-      <ng-container *ngFor="let project of projectsColumn2; let i = index">
-        <a
-          class="card animate__animated animate__zoomIn animate__faster"
-          [href]="project.link"
-          target="_blank"
-        >
-     <div class="card-content light-blue-text text-lighten-5 light-blue darken-3">
-    <span class="card-title">
-        <div class="card-title-content">
-        <span *ngIf="project.language" class="badge light-blue lighten-5 light-blue-text text-darken-3">
-            {{ project.language }}
-        </span>
-        <h5 class="project-title text-ellipsis">{{ project.title}}</h5>
+      </a>
+    </ng-container>
+    <ng-container *ngFor="let project of projectsColumn2; let i = index">
+      <a
+        class="card"
+        [href]="project.link"
+        target="_blank"
+      >
+        <div class="card-content">
+          <span class="card-title">
+            <div class="card-title-content">
+              <span *ngIf="project.language" class="badge">
+                {{ project.language }}
+              </span>
+              <h5 class="project-title">{{ project.title}}</h5>
+            </div>
+          </span>
+          <p class="project-description">{{ project.desc}}.</p>
         </div>
-    </span>
-    <p class="project-description flow-text">{{ project.desc}}.</p>
-    </div>         <!-- Card content goes here -->
-        </a>
-      </ng-container>
-    </div>
+      </a>
+    </ng-container>
   </div>
   <ng-template #elseBlock>
-    <div class="card-panel animate__animated animate__zoomIn animate__faster">
+    <div class="card-panel">
       <p class="not-found-title">Projects not found</p>
     </div>
   </ng-template>
