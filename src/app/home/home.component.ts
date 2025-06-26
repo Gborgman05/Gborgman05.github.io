@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  @Input() desc = "I'm a learner focused on Software Engineering right now. \nI'm always reading something, you can see those here.\nFor some of my projects see here.\nIf you'd like to reach out go here.\n\nIf you want to play tictactoe (with yourself) go here. "
+  @Input() desc = "Hi! I'm Galen: a curious software engineer, lifelong learner, and builder of fun projects. Explore my work, thoughts, and hobbies below!";
   @Input() posts = [ "2020-12-10-First_steps.md",
     "2020-12-10-welcome-to-jekyll.md",
     "2020-12-12-statistics-for-data-science.md",
