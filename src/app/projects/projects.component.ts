@@ -14,7 +14,15 @@ export class ProjectsComponent {
     constructor (private http: HttpClient) {
       let a = "https://github.com/Gborgman05/informal_business"
       const owner = "Gborgman05";
-      const repo_names = ["informal_business", "DATA-301-Final-Project", "algs", "shakespeare-bot-1", "angular-start", "match_sim"];
+      const repo_names = [
+        "informal_business",
+        "DATA-301-Final-Project",
+        "algs",
+        "shakespeare-bot-1",
+        "angular-start",
+        "match_sim",
+        "retirement_calculator"
+      ];
       this.projectsColumn1 = this.projects.filter((_, index) => index % 2 === 0);
       this.projectsColumn2 = this.projects.filter((_, index) => index % 2 === 1);
 
